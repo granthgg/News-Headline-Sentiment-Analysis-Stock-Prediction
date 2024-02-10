@@ -1,6 +1,8 @@
 # Stock Sentiment Analysis
 
 This repository contains a Streamlit application that predicts the movement of stock prices based on the sentiment of news headlines. It uses Machine Learning models and Natural Language Processing (NLP) techniques to analyze the sentiment of the news headlines and predict whether the stock price will go up or down. The application also displays the latest top 10 world news headlines.
+
+
 [Link to the web app](https://stock-prediction-granthgg.streamlit.app/)
 
 ## Features
@@ -22,8 +24,8 @@ pip install -r requirements.txt
 python -m streamlit run main.py
 ```
 ## Usage
--Select the prediction model from the radio button.
--Enter the news headline in the text input field.
--The application will predict whether the stock price will go up or down based on the sentiment of the news headline.
+- Select the prediction model from the radio button.
+- Enter the news headline in the text input field.
+- The application will predict whether the stock price will go up or down based on the sentiment of the news headline.
 
 
