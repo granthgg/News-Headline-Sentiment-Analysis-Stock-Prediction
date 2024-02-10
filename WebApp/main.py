@@ -1,4 +1,4 @@
-#from config import api_key
+from config import api_key
 
 import streamlit as st
 import pickle
