@@ -34,7 +34,7 @@ def load_data_and_models():
     with open('WebApp/train_corpus.pkl', 'rb') as file:
         train_corpus = pickle.load(file)
 
-    with open('cv.pkl', 'rb') as file:
+    with open('WebApp/cv.pkl', 'rb') as file:
         cv = pickle.load(file)
 
     return train_corpus, cv
@@ -56,17 +56,17 @@ def select_model():
         ["Logistic Regression", "Naive Bayes Classifier", "Random Forest Classifier"])
 
     if model == 'Logistic Regression':
-        with open('lr_classifier.pkl', 'rb') as file:
+        with open('WebApp/lr_classifier.pkl', 'rb') as file:
             loaded_model = pickle.load(file)
         st.write('You Selected Logistic Regression')
 
     elif model == 'Naive Bayes Classifier':
-        with open('nb_classifier.pkl', 'rb') as file:
+        with open('WebApp/nb_classifier.pkl', 'rb') as file:
             loaded_model = pickle.load(file)
         st.write('You Selected Naive Bayes Classifier')
 
     elif model == 'Random Forest Classifier':
-        with open('rf_classifier.pkl', 'rb') as file:
+        with open('WebApp/rf_classifier.pkl', 'rb') as file:
             loaded_model = pickle.load(file)
         st.write('You Selected Random Forest Classifier')
 
