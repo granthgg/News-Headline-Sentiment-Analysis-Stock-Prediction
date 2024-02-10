@@ -1,2 +1,2 @@
 nltk == 3.8.1
-newsapi-python == 0.2.7
+newsapi == 0.2.7
