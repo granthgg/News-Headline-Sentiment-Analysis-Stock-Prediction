@@ -31,7 +31,7 @@ for i, article in enumerate(top_headlines['articles'][:10], 1):
 
 # Function to load the necessary data and models
 def load_data_and_models():
-    with open('train_corpus.pkl', 'rb') as file:
+    with open('WebApp/train_corpus.pkl', 'rb') as file:
         train_corpus = pickle.load(file)
 
     with open('cv.pkl', 'rb') as file:
