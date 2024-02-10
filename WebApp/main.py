@@ -2,7 +2,7 @@ from config import api_key
 
 import streamlit as st
 import pickle
-
+import sklearn
 import re
 import nltk
 nltk.download('stopwords')
