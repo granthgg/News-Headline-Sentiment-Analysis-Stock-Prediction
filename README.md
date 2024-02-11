@@ -1,4 +1,4 @@
-# Stock Sentiment Analysis
+# STOCK SENTIMENT ANALYSIS
 
 This repository contains a Streamlit application that predicts the movement of stock prices based on the sentiment of news headlines. It uses Machine Learning models and Natural Language Processing (NLP) techniques to analyze the sentiment of the news headlines and predict whether the stock price will go up or down. The application also displays the latest top 10 world news headlines.
 
