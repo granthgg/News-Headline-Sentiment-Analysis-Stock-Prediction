@@ -4,6 +4,9 @@ This repository contains a Streamlit application that predicts the movement of s
 
 
 [Link to the web app](https://stock-prediction-granthgg.streamlit.app/)
+![WhatsApp Image 2024-02-11 at 20 45 51_07e8dadc](https://github.com/granthgg/News-Headline-Sentiment-Analysis-Stock-Prediction/assets/69439823/901f7c2c-7a93-4041-8e8d-8757c8105dc7)
+
+
 
 ## Features
 
