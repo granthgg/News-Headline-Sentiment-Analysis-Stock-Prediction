@@ -1,6 +1,8 @@
-from config import api_key
-
 import streamlit as st
+from dotenv import load_dotenv
+import os
+
+
 import pickle
 import sklearn
 import re
@@ -8,6 +10,10 @@ import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+
+def configure():
+    load_dotenv()
+
 
 
 # Set the page configuration
@@ -21,7 +27,7 @@ st.set_page_config(
 # Function to get the latest top 10 world news headlines
 from newsapi import NewsApiClient
 
-newsapi = NewsApiClient(api_key)
+newsapi = NewsApiClient(os.getenv('api_key'))
 
 top_headlines = newsapi.get_top_headlines(category='general', language='en', country='in')
 
@@ -104,6 +110,7 @@ def display_prediction(stock_prediction):
 
 # Main function to run the app
 def main():
+    configure()
     train_corpus, cv = load_data_and_models()
     set_title_and_intro()
     loaded_model = select_model()
